@@ -1,6 +1,6 @@
 In order to ensure the replicability and reproducibility of our dataset
 
-Gallotti, R. \& Barthelemy, M. Dryad Digital Repository. doi:10.5061/dryad.pc8m3 (2014).
+Gallotti, R. & Barthelemy, M. Dryad Digital Repository. doi:10.5061/dryad.pc8m3 (2014).
 
 we share here all codes that were developed for producing this dataset. The software is written in Python 2.7. The input files needed are the air timetables provided to us by Innovata LLC, which are included in our dataset  and the 2010 snapshot the NPTDR data. In particular: 
 - the folder identified in the code as "NPTDRTimetablesPath" is contained in all the unzipped version of the files present in the folder October-2010/Timetable Data/CIF/National; 
@@ -22,6 +22,5 @@ Sorts and rewrites the events list, compute the minimal traveltime for all edges
 
 3_finalformat.py  
 Computes the inter-layer traveltime, corrects the minimal traveltime when 0. The output is  the final format of the dataset.
-\end{description}
 
 The file layers.csv is simply typed in a text editor. Several parameters can be easily modified in this workflow. The walking distance wd is defined in step 1. Walking speed, flight connection times, minimal connection time and the lower threshold to the minimal traveltime are defined in step 3. In addition, the same workflow can be also applied for all years where the NPTDR data are available (2004-2011).
